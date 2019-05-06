@@ -1,6 +1,13 @@
 # Vocabulary List Statistics
 Gives some statistics about english language vocabulary. the base vocabulary list is gain using [hackerb9/gwordlist](https://github.com/hackerb9/gwordlist) list.
 
+## Features
+- 54,712 english cleaned vocabulary. using [extract-lemmatized-nonstop-words](https://github.com/openderock/extract-lemmatized-nonstop-words).
+- Based on revising 348,415,810,278 words.
+- Sorted by relative frequency.
+- Relative Frequency percent per word.
+- Cumulative Relative Frequency percent perword sorted by relative frequency.
+
 ## Install
 Using Yarn
 ```
@@ -10,13 +17,6 @@ Using NPM
 ```
 npm i --save vocabulary-list-statistics
 ```
-
-## Features
-- 54,712 english cleaned vocabulary. using [extract-lemmatized-nonstop-words](https://github.com/openderock/extract-lemmatized-nonstop-words).
-- Based on revising 348,415,810,278 words.
-- Sorted by relative frequency.
-- Relative Frequency percent per word.
-- Cumulative Relative Frequency percent perword sorted by relative frequency.
 
 ## Usage
 ```javascript
