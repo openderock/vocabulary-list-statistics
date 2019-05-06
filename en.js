@@ -1,5 +1,5 @@
 const fs = require('fs-extra');
-const _ = require('lodash');
+const { orderBy } = require('lodash');
 const extract = require('extract-lemmatized-nonstop-words');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
@@ -27,7 +27,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
         }
     });
     let list = Array.from(words).map(record => ({ word: record[0], count: record[1], percent: (record[1] * 100 / totalCount) }));
-    list = _.orderBy(list, 'count', 'desc');
+    list = orderBy(list, 'count', 'desc');
     let rank = 1;
     list.reduce((cumulative, item) => {
         cumulative += item.percent;
@@ -43,10 +43,10 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
         // saving as CSV
         const csvWriter = createCsvWriter({
             header: [
-                { id: 'rank' },
-                { id: 'word' },
-                { id: 'percent' },
-                { id: 'cumulative' },
+                { id: 'rank', title: 'Rank' },
+                { id: 'word', title: 'Word' },
+                { id: 'percent', title: 'Percent' },
+                { id: 'cumulative', title: 'Cumulative' },
             ],
             // header: ['RANKING', 'WORD', 'COUNT', 'PERCENT', 'CUMULATIVE'],
             path: './dist/en.csv'
