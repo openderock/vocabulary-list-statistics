@@ -1,0 +1,14 @@
+{
+  "name": "vocabulary-list-statistics",
+  "version": "1.0.0",
+  "main": "en.js",
+  "repository": "git@gitlab.com:derock.ir/vocaboffer/words-frequency-table.git",
+  "author": "Sajjad Shirazy <shirazy.sajjad@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "csv-writer": "^1.3.0",
+    "extract-lemmatized-nonstop-words": "^1.0.11",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11"
+  }
+}
