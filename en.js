@@ -3,11 +3,9 @@ const { orderBy } = require('lodash');
 const extract = require('extract-lemmatized-nonstop-words');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-let totalCount = 0;
 const words = new Map();
 
 function addWord(word, count) {
-    totalCount += count;
     const record = words.get(word);
     if (record) {
         words.set(word, record + count);
@@ -43,14 +41,14 @@ function addWord(word, count) {
         count = parseInt(count) * (348412387855 / 653789027); // scaling en_2018_50k.txt counts to the frequency-alpha-gcide.txt counts
         addWord(word, count);
     });
-    let list = Array.from(words).filter(record => (record[1] / totalCount) >= 0.00000001).map(record => ({ word: record[0], count: record[1], percent: (record[1] * 100 / totalCount) }));
-    list = orderBy(list, 'count', 'desc');
+    let list = orderBy(Array.from(words).map(record => ({ word: record[0], count: record[1] })), 'count', 'desc').slice(0, 10000);
+    const totalCount = list.reduce((totalCount, word) => totalCount + word.count, 0);
     let rank = 1;
     list.reduce((cumulative, item) => {
+        item.percent = item.count * 100 / totalCount;// .toFixed(6);
         cumulative += item.percent;
         item.rank = rank++;
         item.cumulative = cumulative;// .toFixed(6);
-        item.percent = item.percent;// .toFixed(6);
         delete item.count;
         return cumulative;
     }, 0);
