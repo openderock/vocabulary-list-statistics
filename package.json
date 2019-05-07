@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-list-statistics",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "./dist/en.json",
   "repository": "https://github.com/openderock/vocabulary-list-statistics.git",
   "author": "Sajjad Shirazy <shirazy.sajjad@gmail.com>",
