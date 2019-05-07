@@ -49,8 +49,8 @@ function addWord(word, count) {
     list.reduce((cumulative, item) => {
         cumulative += item.percent;
         item.rank = rank++;
-        item.cumulative = cumulative.toFixed(6);
-        item.percent = item.percent.toFixed(6);
+        item.cumulative = cumulative;// .toFixed(6);
+        item.percent = item.percent;// .toFixed(6);
         delete item.count;
         return cumulative;
     }, 0);
