@@ -40,7 +40,7 @@ function addWord(word, count) {
         //     console.log(parsed);
         //     debugger;
         // }
-        count = parseInt(count);
+        count = parseInt(count) * (348412387855 / 653789027); // scaling en_2018_50k.txt counts to the frequency-alpha-gcide.txt counts
         addWord(word, count);
     });
     let list = Array.from(words).filter(record => (record[1] / totalCount) >= 0.00000001).map(record => ({ word: record[0], count: record[1], percent: (record[1] * 100 / totalCount) }));

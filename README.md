@@ -2,7 +2,7 @@
 Gives some statistics about english language vocabulary. the base vocabulary list is gain using [hackerb9/gwordlist](https://github.com/hackerb9/gwordlist) and [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords) lists.
 
 ## Features
-- 56,762 english cleaned vocabulary. cleaned using [extract-lemmatized-nonstop-words](https://github.com/openderock/extract-lemmatized-nonstop-words).
+- 72,735 english cleaned vocabulary. cleaned using [extract-lemmatized-nonstop-words](https://github.com/openderock/extract-lemmatized-nonstop-words).
 - Based on revising 349,066,176,882 words.
 - Sorted by relative frequency.
 - Relative Frequency percent per word.
