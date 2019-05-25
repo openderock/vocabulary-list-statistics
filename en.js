@@ -1,11 +1,33 @@
 const fs = require('fs-extra');
-const { orderBy } = require('lodash');
+const { orderBy, includes } = require('lodash');
 const extract = require('extract-lemmatized-nonstop-words');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const words = new Map();
+const blackList = [
+    'don',
+    'didn',
+    'doesn',
+    'isn',
+    'wasn',
+    'wouldn',
+    'haven',
+    'couldn',
+    'shouldn',
+    'weren',
+    'hasn',
+    'hadn',
+    'goin',
+    // Proper names
+    'john',
+    'jeff',
+    'jeffrey',
+    // ?
+    'huh',
+];
 
 function addWord(word, count) {
+    if (includes(blackList, word)) return;
     const record = words.get(word);
     if (record) {
         words.set(word, record + count);
