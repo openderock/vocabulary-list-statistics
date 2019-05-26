@@ -7,12 +7,12 @@ csv-writer@^1.3.0:
   resolved "https://registry.yarnpkg.com/csv-writer/-/csv-writer-1.3.0.tgz#259336fe4d7e5f6e299a056c8acbb92c6ef21ad2"
   integrity sha512-7Eg/Z3sWvuG0P+A/Hksvyucro26F/oCvbCUe4DrGnuf3kt3mjmwq3jERdfSycrxKMcgiqkrhSBjbRmFcr95TeA==
 
-extract-lemmatized-nonstop-words@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.13.tgz#bc4c359c807060433e9ba656ff1c88a6abffb92a"
-  integrity sha512-HgdoIOl8cSrRdecKz3ZB8jYDxXlWkzsyRX1vWcnvumJ8WAK8mesW55AC8GDm3oQNsto9qcNDhcVi4rDqa0dI2Q==
+extract-lemmatized-nonstop-words@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.15.tgz#1002bb291612f4eeac4682906720ae664dc6574b"
+  integrity sha512-PYAID9c66lTbmLIvyPySw9XDQZO/pX4DWyT5nNUGBmeEST7OVS4FKyUdi/2ZizCcgAlqsr0NV4ujR/39w4miMA==
   dependencies:
-    text-preprocessor "^1.0.0"
+    text-preprocessor "^1.0.2"
     wink-lemmatizer "^3.0.1"
     wink-pos-tagger "^2.2.1"
 
@@ -42,10 +42,10 @@ lodash@^4.17.11:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
-text-preprocessor@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/text-preprocessor/-/text-preprocessor-1.0.0.tgz#5085e85ddccb35a71bad1fb46bbd84f15270d8f7"
-  integrity sha512-aDkvkDpezoD9SGJZCe+6DJlrRyK26A+yPHrTp+Zc6D8HnqQbTTz9zkbQHvPAGTDAuUrjKp/mw8Bixvd8UBmTmg==
+text-preprocessor@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/text-preprocessor/-/text-preprocessor-1.0.2.tgz#fbf698ffb85143b9d662372f15b38cfa6b23e6ab"
+  integrity sha512-2DJr+HSpZMEPwG5pYwnejtX5fD+IemsPCeSLR7UpsQ30/TuT/S8WJljpZexfpZa8fxEEoFGak1Edj2r0QsXd5w==
   dependencies:
     lodash "^4.17.11"
 
