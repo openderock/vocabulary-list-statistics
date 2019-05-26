@@ -66,7 +66,7 @@ function addWord(word, count) {
         count = parseInt(count) * (348412387855 / 653789027); // scaling en_2018_50k.txt counts to the frequency-alpha-gcide.txt counts
         addWord(word, count);
     });
-    let list = orderBy(Array.from(words).map(record => ({ word: record[0], count: record[1] })), 'count', 'desc').slice(0, 10000);
+    let list = orderBy(Array.from(words).map(record => ({ word: record[0], count: record[1] })), 'count', 'desc').slice(0, 50000);
     const totalCount = list.reduce((totalCount, word) => totalCount + word.count, 0);
     let rank = 1;
     list.reduce((cumulative, item) => {
