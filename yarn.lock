@@ -7,10 +7,10 @@ csv-writer@^1.3.0:
   resolved "https://registry.yarnpkg.com/csv-writer/-/csv-writer-1.3.0.tgz#259336fe4d7e5f6e299a056c8acbb92c6ef21ad2"
   integrity sha512-7Eg/Z3sWvuG0P+A/Hksvyucro26F/oCvbCUe4DrGnuf3kt3mjmwq3jERdfSycrxKMcgiqkrhSBjbRmFcr95TeA==
 
-extract-lemmatized-nonstop-words@^1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.15.tgz#1002bb291612f4eeac4682906720ae664dc6574b"
-  integrity sha512-PYAID9c66lTbmLIvyPySw9XDQZO/pX4DWyT5nNUGBmeEST7OVS4FKyUdi/2ZizCcgAlqsr0NV4ujR/39w4miMA==
+extract-lemmatized-nonstop-words@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.16.tgz#744ccad99b7bfa3fe1424f243402157537cb990a"
+  integrity sha512-3EZ/tjhKZR6TpaC6o/RJnv4w2kfMpvu/V88LrgcfmP9tj+sc6TtCtauJKqAEskSd5e2aRttXnXX+y705kLenEQ==
   dependencies:
     text-preprocessor "^1.0.2"
     wink-lemmatizer "^3.0.1"

@@ -22,8 +22,11 @@ const blackList = [
     'john',
     'jeff',
     'jeffrey',
+    'google',
+    'mumbai',
     // ?
     'huh',
+    'ces',
 ];
 
 function addWord(word, count) {
