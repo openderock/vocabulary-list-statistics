@@ -20,7 +20,7 @@
     "csv-writer": "^1.3.0",
     "extract-lemmatized-nonstop-words": "^1.0.17",
     "fs-extra": "^7.0.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   },
   "dependencies": {}
 }
